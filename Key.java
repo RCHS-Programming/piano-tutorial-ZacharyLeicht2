@@ -24,7 +24,7 @@ public class Key extends Actor
         if(!isDown && Greenfoot.isKeyDown(key))
         {
            setImage("white-key-down.png");
-           Greenfoot.playSound("sound");
+           Greenfoot.playSound(sound);
            isDown = true;
         }
         if( isDown && !Greenfoot.isKeyDown(key))
@@ -39,7 +39,7 @@ public class Key extends Actor
      */
     public void play()
     {
-        Greenfoot.playSound("sound"); 
+        Greenfoot.playSound(sound); 
     }
 }
     
